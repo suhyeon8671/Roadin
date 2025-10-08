@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: #fff;
+  /* border-bottom: 1px solid #eaeaea; */ /* 이 줄을 제거하여 하단 선을 없앱니다. */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* 항목들을 수직으로 정렬 */
+  gap: 2.5rem; /* 메뉴 간 간격 조정 */
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.profile-icon {
+  font-size: 1.5rem; /* 아이콘 크기 조정 */
+  color: #555;
+}
+
+.logout-button-nav {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  color: #555;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}

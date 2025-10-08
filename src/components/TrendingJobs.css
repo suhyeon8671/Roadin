@@ -1,0 +1,120 @@
+.trending-jobs-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.trending-jobs-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.trending-jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trending-job-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px 25px;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trending-job-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.rank-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 150px;
+}
+
+.rank-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a0a0a0;
+  width: 40px;
+  text-align: center;
+}
+
+.percentage-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* 연한 파란색으로 변경 */
+  background-color: #eaf2ff; 
+  border: 4px solid #adcffc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.percentage-text {
+  font-size: 1rem;
+  font-weight: 700;
+  /* 연한 파란색 계열의 텍스트 컬러 */
+  color: #3a7bd5;
+}
+
+.info-section {
+  padding-left: 25px;
+  border-left: 1px solid #f0f0f0;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.job-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+  .rank-section {
+    flex-direction: column;
+    min-width: auto;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .trending-job-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .info-section {
+    padding-left: 0;
+    border-left: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+    width: 100%;
+  }
+
+  .rank-number {
+    display: none; /* 모바일에서는 순위 숫자를 숨김 */
+  }
+}

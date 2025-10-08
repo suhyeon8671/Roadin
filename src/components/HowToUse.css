@@ -1,0 +1,83 @@
+.how-to-use-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 4rem;
+  gap: 2rem;
+  background-color: #f9f9f9;
+}
+
+.how-to-use-image {
+  flex-shrink: 0;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.how-to-use-image img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.how-to-use-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.how-to-use-content h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.steps {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.step {
+  flex: 1;
+  max-width: 250px;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4285f4;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+
+.step p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.main-features {
+  margin-top: 3rem;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 2.5rem;
+}
+
+.main-features h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.main-features ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.main-features li {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}

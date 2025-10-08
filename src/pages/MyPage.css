@@ -1,0 +1,147 @@
+/* MyPage.css */
+
+.mypage-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  min-height: calc(100vh - 120px);
+}
+
+.centered-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.mypage-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mypage-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.user-email {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* 추천 직업이 없는 경우 */
+.no-job-info {
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.no-job-info p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.survey-start-button {
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #65a2ff, #3a7bd5);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.survey-start-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(58, 123, 213, 0.3);
+}
+
+/* 추천 직업이 있는 경우 - 직업 정보 카드 */
+.job-card-container {
+    width: 100%;
+}
+
+.recommend-title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.job-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.job-card-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.job-emoji {
+    font-size: 3.5rem;
+    margin-right: 1.5rem;
+}
+
+.job-card-header h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.job-card-body {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.job-section h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3a7bd5;
+    margin-bottom: 1rem;
+}
+
+.job-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.job-section .salary {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tag {
+    background-color: #eaf2ff;
+    color: #3a7bd5;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}

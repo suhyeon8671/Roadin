@@ -1,0 +1,98 @@
+.job-details-container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Pretendard', sans-serif;
+  color: #333;
+}
+
+.job-header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 30px;
+}
+
+.job-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.job-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.detail-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.detail-card.long-card {
+  grid-column: span 2; /* 두 개의 컬럼을 차지하도록 설정 */
+}
+
+@media (max-width: 768px) {
+  .detail-card.long-card {
+    grid-column: span 1; /* 화면이 작아지면 다시 1칸 차지 */
+  }
+  .job-header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+.detail-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #34495e;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.detail-card .salary {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e67e22;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.detail-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail-card ul li {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: background-color 0.2s ease;
+}
+
+.detail-card ul li:hover {
+  background-color: #f1f1f1;
+}
